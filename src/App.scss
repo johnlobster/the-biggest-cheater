@@ -1,0 +1,7 @@
+@use '@material/button/mdc-button';
+@use '@material/button';
+
+.myButton {
+  // @include button.container-fill-color(darksalmon);
+  color: purple;
+}

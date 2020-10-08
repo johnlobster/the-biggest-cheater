@@ -1,0 +1,9 @@
+@use "@material/card/mdc-card";
+
+// @include card.core-styles;
+
+.myCard {
+  width: 400px;
+  height: 200px;
+  @include card.core-styles
+}

@@ -22,6 +22,9 @@ UNDER DEVELOPMENT
   - flex box
   - sass
 - Regex
+- http responses
+- netlify
+
 ## hygen
 
 ``` bash
@@ -29,4 +32,6 @@ cd src/<pages|components>
 hygen comp new ComponentName
 ```
 [hygen documentation](https://www.hygen.io/docs/quick-start)
+
+
 
