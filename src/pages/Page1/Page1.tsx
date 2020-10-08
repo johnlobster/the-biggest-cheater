@@ -22,9 +22,9 @@ const Page1: React.FunctionComponent = (props) => {
       <Container>
         <h1>I am Page full of cool stuff</h1>
 
-        {mySheets.map( (item) => {
+        {mySheets.map( (item, index) => {
           return (
-            <React.Fragment>
+            <React.Fragment key={`sheet_${index}`}>
               <CheatCard>
                 <item.reactSheet />
               </CheatCard>

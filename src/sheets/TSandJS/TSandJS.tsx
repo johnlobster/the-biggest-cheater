@@ -17,10 +17,10 @@ import styles from './TSandJS.module.scss'
 const boxMe: (list: [string, string]) => React.ReactElement = (list) => {
   return (
     <CGrid row>
-      <CGrid xs={12} sm={4} md={4} lg={4}>
+      <CGrid xs={12} sm={3} md={3} lg={2}>
         {list[0]}
       </CGrid>
-      <CGrid xs={12} sm={6} md={6} lg={4}>
+      <CGrid xs={12} sm={9} md={8} lg={6}>
         <pre>
           <div className={styles.codeBlock}>
             {list[1]}

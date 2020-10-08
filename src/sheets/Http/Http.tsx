@@ -25,32 +25,28 @@ const successCommon = `
         204 No content
 `
 
-type codeType = [string, string][]
 
 const boxIt2: (data: string) => React.ReactElement = (data) => {
   const allMatches = [...data.matchAll(/\b(\d\d\d)\s+(.*)/g)]
   // const output: React.ReactElement
   if (allMatches) {
-      const output: React.ReactElement =
+    const output: React.ReactElement =
       <div>
-          {allMatches.map((item, index) => {
-            // console.log(`boxIt2: ${index} ${item[1]} ${item[2]}`)
-            return (
-              <div key={index} className={styles.returnCodeBox}>
-                <div>
-                  {item[1]}
-                </div>
-                <div>
-                  {item[2]}
-                </div>
+        {allMatches.map((item, index) => {
+          // console.log(`boxIt2: ${index} ${item[1]} ${item[2]}`)
+          return (
+            <div key={index} className={styles.returnCodeBox}>
+              <div>
+                {item[1]}
               </div>
-            )
-          }
-      )}
-      </div>
-      
-      return output
-    
+              <div>
+                {item[2]}
+              </div>
+            </div>
+          )}
+        )}
+      </div> 
+    return output 
   } else {
     return (
       <div>
@@ -60,6 +56,8 @@ const boxIt2: (data: string) => React.ReactElement = (data) => {
   }
   
 }
+
+// type codeType = [string, string][]
 // const boxIt: (list: string) => codeType = (list) => {
 //   // let m= list.matchAll(/\b(\d\d\d)\s+(.*)\b/g)
 //   // m = Array.from(m)
