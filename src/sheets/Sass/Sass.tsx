@@ -5,12 +5,14 @@ import React from 'react';
 // interface MoreProps {
 // }
 
-const Markdown: React.FunctionComponent = (props) => {
+const Sass: React.FunctionComponent = (props) => {
   return(
     <div>
-      <h1>I am a Markdown</h1>
+      <h1>I am a Sass</h1>
+
+      <a href="https://sass-lang.com/documentation">sass/scss documentation</a>
     </div>
   );
 }
 
-export default Markdown;
+export default Sass;

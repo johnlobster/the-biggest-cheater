@@ -12,8 +12,7 @@ import styles from './CheatCard.module.scss'
 
 const CheatCard: React.FunctionComponent = (props) => {
   return(
-    <div className={`mdc-card mdc-card--outlined ${styles.myCard}`}>
-      <h1>I am a CheatCard</h1>
+    <div className={styles.myCard}>
       {props.children}
     </div>
   );

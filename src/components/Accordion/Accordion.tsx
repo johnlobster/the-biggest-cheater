@@ -1,5 +1,6 @@
 import React from 'react';
 
+
 import './Accordion.scss'
 // add more props 
 // add <MoreProps> to type FunctionComponent (adds typescript generic)

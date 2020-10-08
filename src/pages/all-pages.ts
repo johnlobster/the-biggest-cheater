@@ -1,8 +1,8 @@
 
 // List of pages
 
-import Http from "./Http/Http";
 import Home from "./Home/Home";
+import Page1 from "./Page1/Page1"
 
 
 
@@ -25,9 +25,9 @@ export const allPages: PageData = [
     reactPage: Home
   },
   {
-    name: "Http",
-    menu: "Http return codes",
-    title: "Http return codes",
-    reactPage: Http
+    name: "Page1",
+    menu: "Page1",
+    title: "Page1",
+    reactPage: Page1
   },
 ]

@@ -3,7 +3,9 @@ import { BrowserRouter as Router } from 'react-router-dom';
 
 import { Switch, Route, } from 'react-router-dom';
 
-import * as pageInfo from "./pages/all-pages"; 
+import * as pageInfo from "./pages/all-pages";
+import Header from './components/Header/Header' 
+import Footer from './components/Footer/Footer'
 import The404 from './pages/The404/The404'
 
 
@@ -12,51 +14,13 @@ import The404 from './pages/The404/The404'
 
 // import  './App.scss'
 
-import { MDBBtn } from "mdbreact";
-
-import Accordion from './components/Accordion/Accordion'
-
-import styles from './App.module.scss'
 
 const App: React.FunctionComponent = () => {
   return (
     <div>
       <Router>
-        <h1>
-          World's most boring web page
-      </h1>
-        <Accordion
-          clickable={
-            <MDBBtn outline color="primary">
-              Oooh, pick me
-          </MDBBtn>
-          }
-        >
-          <p>A paragraph about musical instruments</p>
-        </Accordion>
-
-        <Accordion
-          clickable={
-            <p>Click this paragraph</p>
-          }
-        >
-          <p>Something new</p>
-        </Accordion>
-
-        {/* <CheatCard>
-        <p> A boring paragraph in a card</p>
-      </CheatCard> */}
-        {/* <button className="mdc-button myButton">
-        Boring button
-      </button> */}
-        <MDBBtn outline color="primary">
-          Boring button
-      </MDBBtn>
-        <MDBBtn outline color="danger">Danger</MDBBtn>
-        <MDBBtn outline color="danger" className={styles.myButton}>
-          Purpler than you
-      </MDBBtn>
-
+        
+        <Header />
         <Switch>
           <Route exact path='/' component={pageInfo.allPages[0].reactPage} />
 
@@ -70,6 +34,8 @@ const App: React.FunctionComponent = () => {
           <Route component={The404} />
 
         </Switch>
+        <Footer />
+        
       </Router>
       
     </div>
