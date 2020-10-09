@@ -1,8 +1,26 @@
 
 pre .codeBlock {
   font-family: Consolas,"courier new";
-  color: crimson;
+  color: rgb(216, 18, 57);
   background-color: #f1f1f1;
   padding: 2px;
   font-size: 105%;
+  box-shadow: 0px 3px 5px -1px rgba(0,0,0,0.2),0px 6px 10px 0px rgba(0,0,0,0.14),0px 1px 18px 0px rgba(0,0,0,0.12);
+  border-style: none;
+  border-width: 1px;
+  border-radius: 5px;
+  border-color: black;
+}
+
+.codeBlock2 {
+  font-family: Consolas,"courier new";
+  color: rgb(216, 18, 57);
+  background-color: #f1f1f1;
+  padding: 0.25rem;
+  font-size: 105%;
+  box-shadow: 0px 3px 5px -1px rgba(0,0,0,0.2),0px 6px 10px 0px rgba(0,0,0,0.14),0px 1px 18px 0px rgba(0,0,0,0.12);
+  border-style: none;
+  border-width: 1px;
+  border-radius: 8px;
+  border-color: black;
 }

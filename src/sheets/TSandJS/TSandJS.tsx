@@ -21,8 +21,8 @@ const boxMe: (list: [string, string]) => React.ReactElement = (list) => {
         {list[0]}
       </CGrid>
       <CGrid xs={12} sm={9} md={8} lg={6}>
-        <pre>
-          <div className={styles.codeBlock}>
+        <pre className={styles.codeBlock2}>
+          <div >
             {list[1]}
           </div>
         </pre>
@@ -38,19 +38,24 @@ const TSandJS: React.FunctionComponent = (props) => {
 
         <h4>Array methods</h4>
         {boxMe( [".foreach()", 
-        `myArray.foreach( (item, index, array) => {
+        `
+        myArray.foreach( (item, index, array) => {
           
         })
         `
         ])}
         {boxMe([".map()", 
-        `myArray.map(item, index, array) => {
+        `
+        myArray.map(item, index, array) => {
           return( newArrayElement)
-        })`])}
+        })
+        `])}
         {boxMe([".reduce()", 
-          `myArray.reduce(item, index, array) => {
+        `
+        myArray.reduce(item, index, array) => {
           return( newArrayElement)
-        })`])}
+        })
+        `])}
         
         <Accordion 
           clickable={
