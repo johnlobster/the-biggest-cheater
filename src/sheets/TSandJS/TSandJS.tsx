@@ -37,25 +37,21 @@ const TSandJS: React.FunctionComponent = (props) => {
         <h1>Typescript and Javascript</h1>
 
         <h4>Array methods</h4>
-        {boxMe( [".foreach()", 
-        `
-        myArray.foreach( (item, index, array) => {
-          
-        })
-        `
+        {boxMe( [".foreach()", `myArray.foreach( (item, index, array) => {
+  
+})
+`
         ])}
-        {boxMe([".map()", 
-        `
-        myArray.map(item, index, array) => {
-          return( newArrayElement)
-        })
-        `])}
-        {boxMe([".reduce()", 
-        `
-        myArray.reduce(item, index, array) => {
-          return( newArrayElement)
-        })
-        `])}
+        {boxMe([".map()", `myArray.map(item, index, array) => {
+  return( newArrayElement)
+})
+`
+        ])}
+        {boxMe([".reduce()", `myArray.reduce(item, index, array) => {
+  return( newArrayElement)
+})
+`
+])}
         
         <Accordion 
           clickable={
