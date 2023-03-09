@@ -77,6 +77,28 @@ const Git: React.FunctionComponent = (props) => {
             codeString={gitIgnoreExample}>
           </CodeClick>
         </Accordion>
+
+        <h4>github authentication</h4>
+        <Accordion clickable={
+          <MDBBtn outline color="primary">
+            more on authentication
+          </MDBBtn>
+        }
+        >
+          <div>
+            <p>Github has changed how authentication works - can now only log onto github using 2FA, 
+              so repos previously linked using https cannot now be accessed</p>
+
+            <p>Working method</p>
+            <ul>
+              <li>(assuming github cli previously installed)</li>
+              <li>In windows shell <code>gh auth login</code> Log in as prompted</li>
+              <li>In windows shell <code>gh auth token</code> Copy the token</li>
+              
+            </ul>
+
+          </div>
+        </Accordion>
       </Container>
       
     </React.Fragment>
