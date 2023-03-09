@@ -17,9 +17,14 @@ const Regex: React.FunctionComponent = (props) => {
       <Container>
         <h1>Regular expressions (Regex/Regexp)</h1>
         <h4>Define in Javascript</h4>
-        <code>myRegex = new RegExp("string pattern")</code>
+        <code>{"myRegex = new RegExp(`string pattern with ${stringVariable}`)"}</code>
         <code>myRegex = /"string pattern"/</code>
         <br />
+        <p>
+          Note, don't use <code>new Regexp</code> unless you need it as all special characters including {"\\"} 
+          must be escaped {"\\"}, which makes it hard to debug
+        </p>
+
         <h4>String methods</h4>
         <CGrid row>
           <CGrid xs={4}>
@@ -46,6 +51,7 @@ const Regex: React.FunctionComponent = (props) => {
             [n] - capture group
             .index - location of start of match
             .input - input string
+            .groups - 
           </CGrid>
           <CGrid xs={12}>
             <code>
@@ -62,6 +68,49 @@ const Regex: React.FunctionComponent = (props) => {
           </CGrid>
           
         </CGrid>
+        <Accordion
+          clickable={
+            <MDBBtn outline color="primary">
+              More methods
+          </MDBBtn>
+          }
+        >
+          <CGrid row>
+            <CGrid xs={4}>
+              myString.search(/myRegexp/)
+            </CGrid>
+            <CGrid xs={4}>
+              returns index of start of first match or -1 if no match
+            </CGrid>
+            <CGrid xs={12}>
+              <pre>
+                <div>
+{`
+`}
+
+                </div>
+              </pre>
+            </CGrid>
+          </CGrid>
+
+          <CGrid row>
+            <CGrid xs={4}>
+              myString.replace(/myRegexp/, newString)
+            </CGrid>
+            <CGrid xs={4}>
+              returns new string, replacing string or Regexp with new String. Use /g in Regexp to replace all
+            </CGrid>
+            <CGrid xs={12}>
+              <pre>
+                <div>
+                  {`const m2String = m1String.replace(/\n/g,'')
+`}
+
+                </div>
+              </pre>
+            </CGrid>
+          </CGrid>
+        </Accordion>
         <a href="https://javascript.info/regexp-methods">
           More on methods
         </a>

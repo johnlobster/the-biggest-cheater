@@ -8,6 +8,8 @@ import Regex from './Regex/Regex'
 import Sass from './Sass/Sass'
 import Testing from './Testing/Testing'
 import TSandJS from './TSandJS/TSandJS'
+import Yarn from './Yarn/Yarn'
+import Git from './Git/Git'
 
 export interface SheetDataItem {
   name: string;
@@ -49,5 +51,17 @@ export const allSheets: SheetData = [
     menu: "Regex",
     title: "Regular expressions",
     reactSheet: Regex
+  },
+  {
+    name: "Yarn and npm",
+    menu: "yarn/npm",
+    title: "Packages: yarn and npm",
+    reactSheet: Yarn
+  },
+  {
+    name: "Git version control",
+    menu: "git",
+    title: "Version control: git",
+    reactSheet: Git
   },
 ]

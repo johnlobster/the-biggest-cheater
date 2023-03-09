@@ -66,7 +66,43 @@ const TSandJS: React.FunctionComponent = (props) => {
           {boxMe([".findIndex()", "code"])}
 
         </Accordion>
-      </Container>
+      
+        <h4>Immediately-invoked Function Expressions (IIFE)</h4>
+        <pre className={styles.codeBlock2}>
+          <div >
+            {
+`(() => {
+  /* */
+})()
+`}
+          </div>
+        </pre>
+
+        <h4>Truthy and Falsy</h4>
+
+        <p>The following values are always falsy:</p>
+        <ul>
+          <li>false</li>
+          <li>0 (zero)</li>
+          <li>'' or "" (empty string)</li>
+          <li>null</li>
+          <li>undefined</li>
+          <li>NaN</li>
+        </ul>
+
+        <p>Everything else is truthy. That includes:</p>
+        <ul>
+          <li>'0' (a string containing a single zero)</li>
+          <li>'false' (a string containing the text “false”)</li>
+          <li>[] (an empty array)</li>
+          <li>{} (an empty object)</li>
+          <li>function(){} (an “empty” function)</li>
+        </ul>
+          
+        <a href="https://www.sitepoint.com/javascript-truthy-falsy/">
+          Craig Butler article on sitepoint
+        </a>
+        </Container>
       
     </div>
   );

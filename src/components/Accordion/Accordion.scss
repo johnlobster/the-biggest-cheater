@@ -2,6 +2,20 @@
 .md-jww-accordion-visible {
   display: block;
 }
+.md-jww-accordion-visible-body{
+  // margin: 1em auto 1em 1em; 
+  margin-bottom: 1em;
+  padding: 1em;
+  // width: 75vw;
+    // margin-right: auto;
+    // margin-bottom: 2.5rem;
+    min-width: 100px;
+    box-shadow: 0px 3px 5px -1px rgba(0, 0, 0, 0.2), 0px 6px 10px 0px rgba(0, 0, 0, 0.14), 0px 1px 18px 0px rgba(0, 0, 0, 0.12);
+    border-style: none;
+    border-radius: 6px;
+    border-color: black;
+    border-width: 1px;
+}
 
 .md-jww-accordion-hidden {
   display: none;
@@ -9,4 +23,5 @@
 
 .md-jww-accordion-clickable {
   cursor: pointer; 
+
 }

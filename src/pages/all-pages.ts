@@ -3,6 +3,7 @@
 
 import Home from "./Home/Home";
 import Page1 from "./Page1/Page1"
+import Page2 from "./Page2/Page2"
 
 
 
@@ -29,5 +30,11 @@ export const allPages: PageData = [
     menu: "Page1",
     title: "Page1",
     reactPage: Page1
+  },
+  {
+    name: "Page2",
+    menu: "Page2",
+    title: "Page2",
+    reactPage: Page2
   },
 ]

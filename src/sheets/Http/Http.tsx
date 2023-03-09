@@ -57,38 +57,6 @@ const boxIt2: (data: string) => React.ReactElement = (data) => {
   
 }
 
-// type codeType = [string, string][]
-// const boxIt: (list: string) => codeType = (list) => {
-//   // let m= list.matchAll(/\b(\d\d\d)\s+(.*)\b/g)
-//   // m = Array.from(m)
-//   // m.map((item) => {
-//   //   outList.push([item[0], item[1]])
-//   // })
-//   // if (m) {
-//   //   const outList: codeType = []
-    
-//   //   return outList
-//   // } else {
-//   //   return []
-//   // }
-
-//   const list1 = list.match(/\b(\d\d\d\s+.*)\b/g)
-
-//   if (list1) {
-//     const outList: codeType = []
-//     list1.map((item) => {
-//       console.log(item)
-//       const m = item.match(/(\d\d\d)\s+(.*)$/)
-//       if (m) {
-//         console.log(`m0 ${m[0]} m1 ${m[1]} m2 ${m[2]}`)
-//         outList.push([m[1], m[2]])
-//       }
-//     })
-//     return outList
-//   } else {
-//     return []
-//   }
-// }
 
 // add more props 
 // add <MoreProps> to type FunctionComponent (adds typescript generic)
@@ -109,7 +77,12 @@ const Http: React.FunctionComponent = (props) => {
           clickable={
             <MDBBtn color="secondary">
               See all 200 codes
-          </MDBBtn>
+            </MDBBtn>
+          }
+          unClickable={
+            <MDBBtn color="secondary">
+              Hide all 200 codes
+            </MDBBtn>
           }
         >
           {boxIt2(successAll)}

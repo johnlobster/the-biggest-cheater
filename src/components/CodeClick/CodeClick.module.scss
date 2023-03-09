@@ -1,0 +1,34 @@
+@import "../../global/_globals";
+
+.codeStyling {
+  font-family: Consolas, "courier new";
+  font-size: 105%;
+  color: $text-color;
+}
+
+.boxStyling {
+  margin: 1em 0 1em 0;
+  padding: 0.5em 1em 0 1em;
+  min-width: 100px;
+  box-shadow: 0px 3px 5px -1px rgba(0, 0, 0, 0.2), 0px 6px 10px 0px rgba(0, 0, 0, 0.14), 0px 1px 18px 0px rgba(0, 0, 0, 0.12);
+  border-style: none;
+  border-radius: 3px;
+  border-color: black;
+  border-width: 1px;
+}
+.rightButton {
+  float: right;
+  // position: absolute;
+  // right: 1em;
+  // margin-right: 1em; 
+}
+
+.codeBox {
+  // clear: left;
+}
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+

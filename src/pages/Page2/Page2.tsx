@@ -5,19 +5,16 @@ import CheatCard from '../../components/CheatCard/CheatCard'
 import { allSheets, SheetData} from '../../sheets/all-sheets'
 
 const mySheets: SheetData = [
-  allSheets[2],
-  allSheets[3],
-  allSheets[1],
-  allSheets[4],
-  allSheets[0],
   allSheets[5],
+  allSheets[6],
+  
 ]
 // add more props 
 // add <MoreProps> to type FunctionComponent (adds typescript generic)
 // interface MoreProps {
 // }
 
-const Page1: React.FunctionComponent = (props) => {
+const Page2: React.FunctionComponent = (props) => {
   return(
     <div>
       <Container>
@@ -40,4 +37,4 @@ const Page1: React.FunctionComponent = (props) => {
   );
 }
 
-export default Page1;
+export default Page2;

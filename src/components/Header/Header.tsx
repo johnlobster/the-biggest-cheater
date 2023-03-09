@@ -24,6 +24,9 @@ const Header: React.FunctionComponent = () => {
           <Link to="/Page1">Page 1</Link>
         </h4>
         <h4 >
+          <Link to="/Page2">Page 2</Link>
+        </h4>
+        <h4 >
           <Link to="/The404">Go away</Link>
         </h4>
       </Container>
