@@ -94,7 +94,8 @@ const Git: React.FunctionComponent = (props) => {
               <li>(assuming github cli previously installed)</li>
               <li>In windows shell <code>gh auth login</code> Log in as prompted</li>
               <li>In windows shell <code>gh auth token</code> Copy the token</li>
-              
+              <li>From bash prompt, <code>git push </code>Paste token when prompted for password</li>
+
             </ul>
 
           </div>
@@ -107,4 +108,3 @@ const Git: React.FunctionComponent = (props) => {
 
 export default Git;
 
-// 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
