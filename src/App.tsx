@@ -7,6 +7,7 @@ import * as pageInfo from "./pages/all-pages";
 import Header from './components/Header/Header' 
 import Footer from './components/Footer/Footer'
 import The404 from './pages/The404/The404'
+import Home from './pages/Home/Home'
 
 import Page1 from './pages/Page1/Page1'
 import Page2 from './pages/Page2/Page2'
@@ -21,13 +22,16 @@ import  './App.scss'
 const App: React.FunctionComponent = () => {
   return (
     <div>
+
+      
       <Router>
         
         <Header />
           <Routes>
-            <Route path='/' element={pageInfo.allPages[0].reactPage} />
+            <Route path='/' element={Home} />
+            <Route path='/index.html' element={Home} />
+            <Route path='/Home' element={Home} />
 
-            <Route path='/index.html' element={pageInfo.allPages[0].reactPage} />
 
             <Route path='/Page1' element={<Page1 />} />
           {/* <Route path='/Page1' element={pageInfo.allPages[1].reactPage} /> */}
@@ -43,9 +47,7 @@ const App: React.FunctionComponent = () => {
 
             <Route path = '/*' element={<The404 />} />
           </Routes>
-          
-
-        
+                  
         <Footer />
         
       </Router>
