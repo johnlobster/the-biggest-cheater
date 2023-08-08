@@ -35,7 +35,7 @@ const Container: React.FunctionComponent<MoreProps> = (props) => {
     
     <React.Fragment>
       
-      <div className={containerClass.current}>
+      <div className={`jw-container-all ${containerClass.current}`}>
         {props.children}
       </div>
       

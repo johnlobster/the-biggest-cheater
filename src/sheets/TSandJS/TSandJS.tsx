@@ -2,7 +2,7 @@ import React from 'react';
 
 import { MDBBtn } from "mdbreact";
 
-import Container from '../../components/Container/Container'
+import SheetContainer from '../../components/SheetContainer/SheetContainer'
 import CGrid from '../../components/CGrid/CGrid'
 import Accordion from '../../components/Accordion/Accordion'
 
@@ -33,7 +33,7 @@ const boxMe: (list: [string, string]) => React.ReactElement = (list) => {
 const TSandJS: React.FunctionComponent = (props) => {
   return(
     <div>
-      <Container>
+      <SheetContainer>
         <h1>Typescript and Javascript</h1>
 
         <h4>Array methods</h4>
@@ -56,7 +56,7 @@ const TSandJS: React.FunctionComponent = (props) => {
         <Accordion 
           clickable={
             <MDBBtn outline color="primary">
-              More methods
+              <h4>More methods</h4>
           </MDBBtn>
           }
         >
@@ -102,7 +102,7 @@ const TSandJS: React.FunctionComponent = (props) => {
         <a href="https://www.sitepoint.com/javascript-truthy-falsy/">
           Craig Butler article on sitepoint
         </a>
-        </Container>
+        </SheetContainer>
       
     </div>
   );

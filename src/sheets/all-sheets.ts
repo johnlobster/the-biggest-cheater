@@ -56,13 +56,13 @@ export const allSheets: SheetData = [
     reactSheet: Regex
   },
   {
-    name: "Yarn and npm",
+    name: "YarnNpm",
     menu: "yarn/npm",
     title: "Packages: yarn and npm",
     reactSheet: Yarn
   },
   {
-    name: "Git version control",
+    name: "Git",
     menu: "git",
     title: "Version control: git",
     reactSheet: Git

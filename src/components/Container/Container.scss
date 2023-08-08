@@ -1,4 +1,13 @@
+@import "../../global/_globals.scss";
 
+.jw-container-all {
+  background-color: $default-background-color;
+  box-shadow: $default-drop-shadow;
+  border-style: none;
+    border-radius: 8px;
+    border-color: black;
+    border-width: 1px;
+}
 .md-jww-fixed-100 {
   width: 100%;
   padding: 0 1.5rem 1.5rem 1.5rem ;
@@ -11,5 +20,5 @@
 
 .md-jww-fluid {
   width: 100%;
-  padding: 0 1.5rem 1.5rem 1.5rem;
+  // padding: 0 0.5rem 1.5rem 0.5rem;
 }

@@ -17,11 +17,11 @@ const mySheets: SheetData = [
 // interface MoreProps {
 // }
 
-const Page1: React.FunctionComponent = (props) => {
+const Page1: React.FunctionComponent = () => {
   return(
     <div>
       <Container>
-        <h1>I am Page full of cool stuff</h1>
+        <h1>I am a Page full of cool stuff</h1>
 
         {mySheets.map( (item, index) => {
           return (

@@ -1,7 +1,7 @@
 import React from 'react';
 
 
-import Container from '../../components/Container/Container'
+import SheetContainer from '../../components/SheetContainer/SheetContainer'
 import CodeClick from '../../components/CodeClick/CodeClick'
 
 // add more props 
@@ -41,7 +41,7 @@ const reactRouter =
 const ReactSheet: React.FunctionComponent = (props) => {
   return(
     <React.Fragment>
-      <Container fixed100>
+      <SheetContainer >
         <h1>React</h1>
         
         <h4>Generic boilerplate for hooks based React</h4>
@@ -52,7 +52,7 @@ const ReactSheet: React.FunctionComponent = (props) => {
         <CodeClick codeString={reactRouter} />
         
         <h4> <a href="https://yarnpkg.com/">Link to Yarn documentation</a></h4>
-      </Container>
+      </SheetContainer>
     
     </React.Fragment>
   );

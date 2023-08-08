@@ -3,7 +3,7 @@ import React from 'react';
 import { MDBBtn } from "mdbreact";
 
 import Accordion from '../../components/Accordion/Accordion'
-import Container from '../../components/Container/Container'
+import SheetContainer from '../../components/SheetContainer/SheetContainer'
 
 import styles from './Http.module.scss'
 
@@ -66,7 +66,7 @@ const boxIt2: (data: string) => React.ReactElement = (data) => {
 const Http: React.FunctionComponent = (props) => {
   return(
     <div>
-      <Container>
+      <SheetContainer>
         <h1>Http return codes</h1>
 
         <h4> 200: Success</h4>
@@ -193,7 +193,7 @@ const Http: React.FunctionComponent = (props) => {
         <a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Status">
           full http return code documentation on MDN
       </a>
-      </Container>
+      </SheetContainer>
       
 
     </div>

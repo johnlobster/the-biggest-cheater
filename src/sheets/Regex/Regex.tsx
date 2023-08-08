@@ -2,7 +2,7 @@ import React from 'react';
 
 import { MDBBtn } from "mdbreact";
 
-import Container from '../../components/Container/Container'
+import SheetContainer from '../../components/SheetContainer/SheetContainer'
 import CGrid from '../../components/CGrid/CGrid'
 import Accordion from '../../components/Accordion/Accordion'
 
@@ -14,7 +14,7 @@ import Accordion from '../../components/Accordion/Accordion'
 const Regex: React.FunctionComponent = (props) => {
   return(
     <div>
-      <Container>
+      <SheetContainer>
         <h1>Regular expressions (Regex/Regexp)</h1>
         <h4>Define in Javascript</h4>
         <code>{"myRegex = new RegExp(`string pattern with ${stringVariable}`)"}</code>
@@ -120,7 +120,7 @@ const Regex: React.FunctionComponent = (props) => {
         <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions">
           Regular expressions at MDN
         </a>
-      </Container>
+      </SheetContainer>
     </div>
   );
 }

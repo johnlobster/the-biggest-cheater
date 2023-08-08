@@ -2,7 +2,7 @@ import React from 'react';
 
 import { MDBBtn } from "mdbreact";
 
-import Container from '../../components/Container/Container'
+import SheetContainer from '../../components/SheetContainer/SheetContainer'
 import CGrid from '../../components/CGrid/CGrid'
 import CTable from '../../components/CTable/CTable';
 import Accordion from '../../components/Accordion/Accordion'
@@ -27,7 +27,7 @@ const animationDataTable: string[][] = [
 const Css: React.FunctionComponent = (props) => {
   return(
     <div>
-      <Container>
+      <SheetContainer>
         <h1>CSS</h1>
         <h4>Units</h4>
         <div>
@@ -169,7 +169,7 @@ myElement {
           <h5>css animation property shorthand</h5>
           <CTable  tableDef={[[4,"code"],[8]]} tableData={animationDataTable}></CTable>
         </div>
-      </Container>
+      </SheetContainer>
     </div>
   );
 }

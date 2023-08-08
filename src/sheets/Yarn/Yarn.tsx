@@ -5,7 +5,7 @@ import { MDBBtn } from "mdbreact";
 import CGrid from '../../components/CGrid/CGrid'
 import Accordion from '../../components/Accordion/Accordion';
 import CTable from '../../components/CTable/CTable'
-import Container from '../../components/Container/Container'
+import SheetContainer from '../../components/SheetContainer/SheetContainer'
 import CodeClick from '../../components/CodeClick/CodeClick'
 
 // add more props 
@@ -47,7 +47,7 @@ const manifestString =
 const Yarn: React.FunctionComponent = (props) => {
   return(
     <React.Fragment>
-      <Container fixed100>
+      <SheetContainer>
         <h1>Yarn and NPM: package managers</h1>
         <h4>Command comparison</h4>
         <CTable tableDef={[4,[4,"code"],[4,"code"]]} tableData={yarnInfo}></CTable>
@@ -73,7 +73,7 @@ const Yarn: React.FunctionComponent = (props) => {
         </Accordion>
         
         <h4> <a href="https://yarnpkg.com/">Link to Yarn documentation</a></h4>
-      </Container>
+      </SheetContainer>
     
     </React.Fragment>
   );

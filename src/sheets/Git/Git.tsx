@@ -5,7 +5,7 @@ import { MDBBtn } from "mdbreact";
 import CodeClick from '../../components/CodeClick/CodeClick'
 import CGrid from '../../components/CGrid/CGrid'
 import CTable from '../../components/CTable/CTable'
-import Container from '../../components/Container/Container'
+import SheetContainer from '../../components/SheetContainer/SheetContainer'
 import Accordion from '../../components/Accordion/Accordion';
 
 // add more props 
@@ -60,7 +60,7 @@ yarn-error.log*
 const Git: React.FunctionComponent = (props) => {
   return(
     <React.Fragment>
-      <Container fixed100>
+      <SheetContainer>
         <h1>Git: version control</h1>
         <h4>Basic usage</h4>
         <CTable tableDef={[8,[4,"code"]]} tableData={gitLifeCycle}></CTable>
@@ -105,7 +105,7 @@ const Git: React.FunctionComponent = (props) => {
           </div>
 
         </Accordion>
-      </Container>
+      </SheetContainer>
       
     </React.Fragment>
   );

@@ -3,8 +3,9 @@
 
 
 import React from 'react';
+import {Link} from 'react-router-dom';
 
-import { MDBBtn } from "mdbreact";
+// import { MDBBtn } from "mdbreact";
 
 
 import Container from '../../components/Container/Container'
@@ -36,14 +37,15 @@ const Home: React.FunctionComponent = (props) => {
         <h1>
           The biggest cheater 
         </h1>
-        <h3>All you ever wanted to know about web design but were afraid to ask</h3>
+        <h4>All you ever wanted to know about web design but were afraid to ask</h4>
 
-        <h2> Click to get info on the following</h2>
+        <h4> Click to get info on the following</h4>
         
         {sortedAllSheets.map((item, index, array) => {
+          const destination: string = "/sheets/" + item.name
           return (
             <h5 key={item.name}>
-              {item.title}
+              <Link to={destination} > {item.title}</Link>
             </h5>
           )
         })}

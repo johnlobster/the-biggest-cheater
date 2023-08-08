@@ -2,7 +2,7 @@ import React from 'react';
 
 import { MDBBtn } from "mdbreact";
 
-import Container from '../../components/Container/Container'
+import SheetContainer from '../../components/SheetContainer/SheetContainer'
 import CGrid from '../../components/CGrid/CGrid'
 import Accordion from '../../components/Accordion/Accordion'
 
@@ -33,7 +33,7 @@ const boxMe: (list: [string, string]) => React.ReactElement = (list) => {
 const Node: React.FunctionComponent = (props) => {
   return(
     <div>
-      <Container>
+      <SheetContainer>
         <h1>Nodejs</h1>
 
         <h4>File system</h4>
@@ -62,7 +62,7 @@ const Node: React.FunctionComponent = (props) => {
             {`fs.readFileSync("./page-data.ts", {encoding: "utf8"});`}
           </CGrid>
         </CGrid>
-      </Container>
+      </SheetContainer>
     </div>
   );
 }

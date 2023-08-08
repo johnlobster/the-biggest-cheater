@@ -13,9 +13,9 @@ const Header: React.FunctionComponent = () => {
 
   
   return(
-    <div className={styles.topBox}>
+    <div >
+      <h1 className={styles.title}>Cheatsheet</h1>
       <Container >
-        <h1 className={styles.title}>Cheatsheet</h1>
         <h2>Page menu</h2>
         <h4 >
           <Link to="/Home">Go home</Link>

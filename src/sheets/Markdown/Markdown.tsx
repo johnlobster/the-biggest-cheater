@@ -2,7 +2,7 @@ import React from 'react';
 
 import { Remarkable } from 'remarkable';
 import CGrid from '../../components/CGrid/CGrid'
-import Container from '../../components/Container/Container'
+import SheetContainer from '../../components/SheetContainer/SheetContainer'
 
 import styles from './Markdown.module.scss'
 
@@ -93,7 +93,7 @@ const Markdown: React.FunctionComponent = (props) => {
 
   return(
     <React.Fragment>
-      <Container fixed100>
+      <SheetContainer >
         <h1>Markdown</h1>
 
         <MarkdownBox mdSource={header}/>
@@ -119,7 +119,7 @@ const Markdown: React.FunctionComponent = (props) => {
         
         
 
-      </Container>
+      </SheetContainer>
       
     </React.Fragment>
   );
