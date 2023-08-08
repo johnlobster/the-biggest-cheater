@@ -5,8 +5,10 @@ import CheatCard from '../../components/CheatCard/CheatCard'
 import { allSheets, SheetData} from '../../sheets/all-sheets'
 
 const mySheets: SheetData = [
+  allSheets[7],
   allSheets[5],
   allSheets[6],
+
   
 ]
 // add more props 

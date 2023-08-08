@@ -89,16 +89,21 @@ const Git: React.FunctionComponent = (props) => {
             <p>Github has changed how authentication works - can now only log onto github using 2FA, 
               so repos previously linked using https cannot now be accessed</p>
 
-            <p>Working method</p>
+            <h5>Working method</h5>
             <ul>
               <li>(assuming github cli previously installed)</li>
               <li>In windows shell <code>gh auth login</code> Log in as prompted</li>
               <li>In windows shell <code>gh auth token</code> Copy the token</li>
               <li>From bash prompt, <code>git push </code>Paste token when prompted for password</li>
-
             </ul>
-
+            <h5>caching password</h5>
+            <ul>
+              <li>From bash prompt <code>git config --global credential.helper wincred</code></li>
+              <li>push entering password as above</li>
+              <li>should not have to enter password again</li>
+            </ul>
           </div>
+
         </Accordion>
       </Container>
       

@@ -1,7 +1,53 @@
-@use '@material/button/mdc-button';
-@use '@material/button';
+/* set up body fonts, background, styles */
+@import "./global/_globals.scss";
 
-.myButton {
-  // @include button.container-fill-color(darksalmon);
-  color: purple;
+
+body {
+  // font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  //   'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  //   sans-serif;
+  // -webkit-font-smoothing: antialiased;
+  // -moz-osx-font-smoothing: grayscale;
+
+  // paragraph font
+  font-family: 'Roboto', -apple-system, BlinkMacSystemFont, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 1em;
+  line-height: 1.2; // Paragraph default
+
+  
+  
+  // colors
+  background-color: $default-background-color; // Should be overwritten by paper background. 
+  color: $default-color;
+  background-image: url("./images/paperBG.jpg");
+}
+
+code {
+  font-family: monospace;
+  font-size: 1rem; // to match body text
+  font-weight: 600;
+}
+h1, h2, h3, h4, h5, h6 {
+  // default font for all titles
+    font-family: $titleFont, 'Roboto', -apple-system, BlinkMacSystemFont, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  
+    line-height: 1.5; // Title Default
+    letter-spacing: 0.05rem; // spreads out letters in title a little
+}
+
+h1 {
+  font-size: 3em;
+}
+h2 {
+  font-size: 2.5em;
+}
+h3 {
+  font-size: 2em;
+}
+h4, h5,h6 {
+  font-size: 1.5em;
 }

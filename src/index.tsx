@@ -1,18 +1,19 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
-
-import '@fortawesome/fontawesome-free/css/all.min.css'; 
-import 'bootstrap-css-only/css/bootstrap.min.css'; 
-import 'mdbreact/dist/css/mdb.css';
+import {createRoot} from 'react-dom/client';  // Note {} is required 
 
 import App from './App';
+const rootDomNode = document.getElementById('root')
+if ( rootDomNode !== null) {
+  const root = createRoot(rootDomNode)
+  if (root !== null) {
+    root.render(
+      <React.StrictMode>
+        <App />
+      </React.StrictMode>,
 
+    );
+  }
 
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
-);
+}
 
 

@@ -4,12 +4,15 @@
 import Http from './Http/Http'
 import Markdown from './Markdown/Markdown'
 import Css from './Css/Css'
+import ReactSheet from './ReactSheet/ReactSheet'
 import Regex from './Regex/Regex'
 import Sass from './Sass/Sass'
 import Testing from './Testing/Testing'
 import TSandJS from './TSandJS/TSandJS'
 import Yarn from './Yarn/Yarn'
 import Git from './Git/Git'
+import React from 'react'
+import Layout from './Layout/Layout'
 
 export interface SheetDataItem {
   name: string;
@@ -63,5 +66,17 @@ export const allSheets: SheetData = [
     menu: "git",
     title: "Version control: git",
     reactSheet: Git
+  },
+  {
+    name: "React",
+    menu: "React",
+    title: "React",
+    reactSheet: ReactSheet
+  },
+  {
+    name: "Layout",
+    menu: "Layout",
+    title: "Layout using html/css",
+    reactSheet: Layout
   },
 ]

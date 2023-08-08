@@ -1,4 +1,14 @@
+@import "../../global/_globals.scss";
 
 .topBox {
-  background-color: aquamarine;
+  background-color: rgb(223, 185, 135);
+}
+
+.title {
+  font-family: $displayFont, 'Roboto', -apple-system, BlinkMacSystemFont, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-size: 5em;
+    line-height: 1.75; 
+    letter-spacing: 0.4rem; // spreads out letters in title
 }

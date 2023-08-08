@@ -25,6 +25,12 @@ UNDER DEVELOPMENT
 - http responses
 - netlify
 
+
+## Node and npm versions
+
+Node:
+npm: 
+
 ## hygen
 
 ``` bash

@@ -13,7 +13,7 @@ const The404: React.FunctionComponent = (props) => {
   return(
     <div>
       <Container>
-        <h1>404 This was all a big mistake</h1>
+        <h1>404 This was all a big mistake, you went to a page that doesn't exist</h1>
 
         <h1>Next time, just go to <a href="https://stackexchange.com/">stack exchange</a> instead</h1>
 
