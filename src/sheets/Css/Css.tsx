@@ -6,6 +6,8 @@ import SheetContainer from '../../components/SheetContainer/SheetContainer'
 import CGrid from '../../components/CGrid/CGrid'
 import CTable from '../../components/CTable/CTable';
 import Accordion from '../../components/Accordion/Accordion'
+import AccordionButton from '../../components/AccordionButton/AccordionButton'
+
 import CodeBox from '../../components/CodeBox/CodeBox';
 
 // add more props 
@@ -106,9 +108,7 @@ const Css: React.FunctionComponent = (props) => {
 
           <Accordion
             clickable={
-              <MDBBtn outline color="primary">
-                More Selectors
-              </MDBBtn>
+              <AccordionButton>More Selectors</AccordionButton>
             }
           >
             <CGrid row>

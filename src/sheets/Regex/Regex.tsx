@@ -5,6 +5,8 @@ import { MDBBtn } from "mdbreact";
 import SheetContainer from '../../components/SheetContainer/SheetContainer'
 import CGrid from '../../components/CGrid/CGrid'
 import Accordion from '../../components/Accordion/Accordion'
+import AccordionButton from '../../components/AccordionButton/AccordionButton'
+
 
 // add more props 
 // add <MoreProps> to type FunctionComponent (adds typescript generic)
@@ -70,9 +72,7 @@ const Regex: React.FunctionComponent = (props) => {
         </CGrid>
         <Accordion
           clickable={
-            <MDBBtn outline color="primary">
-              More methods
-          </MDBBtn>
+            <AccordionButton>More methods</AccordionButton>
           }
         >
           <CGrid row>

@@ -4,6 +4,7 @@ import { MDBBtn } from "mdbreact";
 
 import CGrid from '../../components/CGrid/CGrid'
 import Accordion from '../../components/Accordion/Accordion';
+import AccordionButton from '../../components/AccordionButton/AccordionButton'
 import CTable from '../../components/CTable/CTable'
 import SheetContainer from '../../components/SheetContainer/SheetContainer'
 import CodeClick from '../../components/CodeClick/CodeClick'
@@ -61,9 +62,7 @@ const Yarn: React.FunctionComponent = (props) => {
         <h4>Example skeleton package.json"</h4>
         <Accordion
           clickable={
-            <MDBBtn outline color="primary">
-              package.json example
-            </MDBBtn>
+            <AccordionButton>package.json example</AccordionButton>
           }
         >
           <CodeClick

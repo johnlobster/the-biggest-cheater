@@ -5,6 +5,7 @@ import { MDBBtn } from "mdbreact";
 import SheetContainer from '../../components/SheetContainer/SheetContainer'
 import CGrid from '../../components/CGrid/CGrid'
 import Accordion from '../../components/Accordion/Accordion'
+import AccordionButton from '../../components/AccordionButton/AccordionButton'
 
 import styles from './TSandJS.module.scss'
 
@@ -55,9 +56,7 @@ const TSandJS: React.FunctionComponent = (props) => {
         
         <Accordion 
           clickable={
-            <MDBBtn outline color="primary">
-              <h4>More methods</h4>
-          </MDBBtn>
+            <AccordionButton>More methods</AccordionButton>
           }
         >
           {boxMe([".every()", "code"])}

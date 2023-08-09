@@ -7,6 +7,8 @@ import CGrid from '../../components/CGrid/CGrid'
 import CTable from '../../components/CTable/CTable'
 import SheetContainer from '../../components/SheetContainer/SheetContainer'
 import Accordion from '../../components/Accordion/Accordion';
+import AccordionButton from '../../components/AccordionButton/AccordionButton'
+
 
 // add more props 
 // add <MoreProps> to type FunctionComponent (adds typescript generic)
@@ -68,9 +70,7 @@ const Git: React.FunctionComponent = (props) => {
         <h4>Example .gitignore</h4>
         <Accordion
           clickable={
-            <MDBBtn outline color="primary">
-              .gitignore example
-            </MDBBtn>
+            <AccordionButton>.gitignore example</AccordionButton>
           }
         >
           <CodeClick
@@ -80,9 +80,7 @@ const Git: React.FunctionComponent = (props) => {
 
         <h4>github authentication</h4>
         <Accordion clickable={
-          <MDBBtn outline color="primary">
-            more on authentication
-          </MDBBtn>
+          <AccordionButton>more on authentication</AccordionButton>
         }
         >
           <div>
