@@ -36,6 +36,7 @@ Simple, might be sufficient
 #### mdbreact
 
 Bootstrap variant, uses ! important same as bootstrap
+https://mdbootstrap.com/docs/react/
 
 #### Google
 

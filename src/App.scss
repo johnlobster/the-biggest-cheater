@@ -22,6 +22,9 @@ body {
   background-color: $default-background-color; // Should be overwritten by paper background. 
   color: $default-color;
   background-image: url("./images/paperBG.jpg");
+
+  // set maximum width for desktop, improves image with large window
+  max-width: 1200px;
 }
 
 code {
@@ -37,6 +40,7 @@ h1, h2, h3, h4, h5, h6 {
   
     line-height: 1.5; // Title Default
     letter-spacing: 0.05rem; // spreads out letters in title a little
+    color: $default-color;
 }
 
 h1 {
