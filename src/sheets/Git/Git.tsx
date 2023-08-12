@@ -65,7 +65,14 @@ const Git: React.FunctionComponent = (props) => {
       <SheetContainer>
         <h1>Git: version control</h1>
         <h4>Basic usage</h4>
-        <CTable tableDef={[8,[4,"code"]]} tableData={gitLifeCycle}></CTable>
+        <CTable tableDef={[4,[4,"code"]]} tableData={[
+          ["Add all files, new and changed","git add -A"],
+          ["Check list of files","git status"],
+          ["Commit","git commit -m \"Meaningful message\""],
+          ["push to remote repo","git push"]
+          ]} />
+        <h4>Git lifecycle</h4>
+        <CTable tableDef={[4,[4,"code"]]} tableData={gitLifeCycle}></CTable>
 
         <h4>Example .gitignore</h4>
         <Accordion

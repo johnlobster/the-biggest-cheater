@@ -169,6 +169,10 @@ myElement {
           <h5>css animation property shorthand</h5>
           <CTable  tableDef={[[4,"code"],[8]]} tableData={animationDataTable}></CTable>
         </div>
+        <h4>Flexbox</h4>
+        <p>See <a href='https://css-tricks.com/snippets/css/a-guide-to-flexbox/#flexbox-background'>CSS Tricks guide to flexbox</a></p>
+        <h4>Grid</h4>
+        <p>See <a href='https://css-tricks.com/snippets/css/complete-guide-grid/'>CSS Tricks guide to grid</a></p>
       </SheetContainer>
     </div>
   );

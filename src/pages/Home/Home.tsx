@@ -19,7 +19,7 @@ import {allSheets} from '../../sheets/all-sheets'
 // interface MoreProps {
 // }
 
-const Home: React.FunctionComponent = (props) => {
+const Home: React.FunctionComponent = () => {
   const sortedAllSheets = allSheets.sort( (a,b) => {
     let val = 0
     if (a.title > b.title) {

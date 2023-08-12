@@ -5,7 +5,7 @@ import React, { useEffect } from 'react';
       Maybe could fall back to flexbox if run in an old browser
     */
 
-import './CGrid.scss'
+import './CGrid.module.scss'
 
 // import theme from "../../global/theme"
 

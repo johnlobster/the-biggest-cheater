@@ -22,9 +22,9 @@ const CodeClick: React.FunctionComponent<MoreProps> = (props) => {
       {props.other && <p>{props.other}</p>}
       <div className={styles.boxStyling}>
         <div className={styles.clearfix}>
-          <MDBBtn outline color="primary" onClick={copyData} className={styles.rightButton}>
+          <div onClick={copyData} className={`btn btn-outline-secondary ${styles.buttonBox}`}>
             Copy
-          </MDBBtn>
+          </div>
           
 
         </div>

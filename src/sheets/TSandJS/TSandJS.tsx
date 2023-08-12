@@ -77,6 +77,14 @@ const TSandJS: React.FunctionComponent = (props) => {
           </div>
         </pre>
 
+        <h4>Spread operator ...</h4>
+
+        <p>Copy all or part of an existing array or object into another array or object.</p>
+        {boxMe(["Convert an array into arguments for a function", `const numbers = [1, 2, 3, 4, 5, 6]
+myFunction(...numbers)`
+        ])}
+        {boxMe(["Use in combination with destructuring","const [one, two, ...rest] = numbers"])}
+          
         <h4>Truthy and Falsy</h4>
 
         <p>The following values are always falsy:</p>

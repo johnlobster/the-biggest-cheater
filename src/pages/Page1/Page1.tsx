@@ -6,11 +6,8 @@ import { allSheets, SheetData} from '../../sheets/all-sheets'
 
 const mySheets: SheetData = [
   allSheets[2],
-  allSheets[3],
-  allSheets[1],
-  allSheets[4],
-  allSheets[0],
-  allSheets[5],
+  allSheets[7],
+  
 ]
 // add more props 
 // add <MoreProps> to type FunctionComponent (adds typescript generic)
@@ -21,7 +18,7 @@ const Page1: React.FunctionComponent = () => {
   return(
     <div>
       <Container>
-        <h1>I am a Page full of cool stuff</h1>
+        <h1>Javascript and friends</h1>
 
         {mySheets.map( (item, index) => {
           return (

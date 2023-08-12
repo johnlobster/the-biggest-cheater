@@ -5,7 +5,11 @@ import CheatCard from '../../components/CheatCard/CheatCard'
 import { allSheets, SheetData} from '../../sheets/all-sheets'
 
 const mySheets: SheetData = [
-  allSheets[3],
+  allSheets[6],
+  allSheets[5],
+  allSheets[1],
+  allSheets[0],
+
   
 ]
 // add more props 
@@ -13,11 +17,11 @@ const mySheets: SheetData = [
 // interface MoreProps {
 // }
 
-const Page2: React.FunctionComponent = (props) => {
+const Page3: React.FunctionComponent = (props) => {
   return(
     <div>
       <Container>
-        <h1>Layout</h1>
+        <h1>Support</h1>
 
         {mySheets.map( (item, index) => {
           return (
@@ -36,4 +40,4 @@ const Page2: React.FunctionComponent = (props) => {
   );
 }
 
-export default Page2;
+export default Page3;
