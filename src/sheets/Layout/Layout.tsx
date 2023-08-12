@@ -14,7 +14,7 @@ import SheetContainer from '../../components/SheetContainer/SheetContainer'
 // }
 
 
-const Layout: React.FunctionComponent = (props) => {
+const Layout: React.FunctionComponent = () => {
   return(
     <React.Fragment>
       <SheetContainer>
