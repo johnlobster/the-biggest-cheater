@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { MDBBtn } from "mdbreact";
+// import { MDBBtn } from "mdbreact";
 
 import SheetContainer from '../../components/SheetContainer/SheetContainer'
 import CGrid from '../../components/CGrid/CGrid'
@@ -31,7 +31,7 @@ const boxMe: (list: [string, string]) => React.ReactElement = (list) => {
     </CGrid>
   )
 }
-const TSandJS: React.FunctionComponent = (props) => {
+const TSandJS: React.FunctionComponent = () => {
   return(
     <div>
       <SheetContainer>

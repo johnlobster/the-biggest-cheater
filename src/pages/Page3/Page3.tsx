@@ -17,7 +17,7 @@ const mySheets: SheetData = [
 // interface MoreProps {
 // }
 
-const Page3: React.FunctionComponent = (props) => {
+const Page3: React.FunctionComponent = () => {
   return(
     <div>
       <Container>

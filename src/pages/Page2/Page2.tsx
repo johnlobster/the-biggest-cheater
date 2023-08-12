@@ -13,7 +13,7 @@ const mySheets: SheetData = [
 // interface MoreProps {
 // }
 
-const Page2: React.FunctionComponent = (props) => {
+const Page2: React.FunctionComponent = () => {
   return(
     <div>
       <Container>

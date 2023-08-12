@@ -13,6 +13,10 @@ import AccordionButton from '../../components/AccordionButton/AccordionButton'
 // interface MoreProps {
 // }
 
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+// Content
+
 const reactHooks =
 `import React from 'react';
 const MyComp: React.FunctionComponent = (props) => {
@@ -71,7 +75,10 @@ export default MyComp;
 const reactRouter =
 `
 `
-const ReactSheet: React.FunctionComponent = (props) => {
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+const ReactSheet: React.FunctionComponent = () => {
   return(
     <React.Fragment>
       <SheetContainer >

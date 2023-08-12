@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { MDBBtn } from "mdbreact";
+// import { MDBBtn } from "mdbreact";
 
 import styles from './CodeClick.module.scss'
 

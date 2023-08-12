@@ -63,7 +63,7 @@ const boxIt2: (data: string) => React.ReactElement = (data) => {
 // interface MoreProps {
 // }
 
-const Http: React.FunctionComponent = (props) => {
+const Http: React.FunctionComponent = () => {
   return(
     <div>
       <SheetContainer>

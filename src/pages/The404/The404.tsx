@@ -9,7 +9,7 @@ import styles from './The404.module.scss'
 // interface MoreProps {
 // }
 
-const The404: React.FunctionComponent = (props) => {
+const The404: React.FunctionComponent = () => {
   return(
     <div>
       <Container>

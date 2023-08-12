@@ -89,7 +89,7 @@ const MarkdownBox: React.FunctionComponent<MDBoxProps> = (props) => {
 // interface MoreProps {
 // }
 
-const Markdown: React.FunctionComponent = (props) => {
+const Markdown: React.FunctionComponent = () => {
 
   return(
     <React.Fragment>

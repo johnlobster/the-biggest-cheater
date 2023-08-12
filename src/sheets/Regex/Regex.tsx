@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { MDBBtn } from "mdbreact";
+// import { MDBBtn } from "mdbreact";
 
 import SheetContainer from '../../components/SheetContainer/SheetContainer'
 import CGrid from '../../components/CGrid/CGrid'
@@ -13,7 +13,7 @@ import AccordionButton from '../../components/AccordionButton/AccordionButton'
 // interface MoreProps {
 // }
 
-const Regex: React.FunctionComponent = (props) => {
+const Regex: React.FunctionComponent = () => {
   return(
     <div>
       <SheetContainer>

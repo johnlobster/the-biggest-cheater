@@ -1,10 +1,10 @@
 import React from 'react';
 import styles from './CTable.module.scss';
 
-interface TableDefElement  {
-  width: number;
-  text?: boolean;
-}
+// interface TableDefElement  {
+//   width: number;
+//   text?: boolean;
+// }
 
 type Ctel = number | [number] | [number, "code"];
 
@@ -45,12 +45,12 @@ interface MoreProps {
 const CTable: React.FunctionComponent<MoreProps> = (props) => {
   return(
     <React.Fragment>
-      {props.tableData.map((dataItem, index, array) => {
+      {props.tableData.map((dataItem) => {
         return(
           <div key={`dataItem_${dataItem}`}>
             <CTGrid row>
               {/* <div>{props.tableDef}</div> */}
-              {props.tableDef.map((item,index,array) => {
+              {props.tableDef.map((item,index) => {
                 return (
                   <React.Fragment>
                     {(typeof(item) === "number") ? 

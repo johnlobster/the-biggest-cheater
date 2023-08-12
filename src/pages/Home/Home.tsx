@@ -41,7 +41,7 @@ const Home: React.FunctionComponent = () => {
 
         <h4> Click to get info on the following</h4>
         
-        {sortedAllSheets.map((item, index, array) => {
+        {sortedAllSheets.map((item) => {
           const destination: string = "/sheets/" + item.name
           return (
             <h5 key={item.name}>

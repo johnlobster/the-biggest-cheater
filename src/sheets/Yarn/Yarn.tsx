@@ -1,8 +1,8 @@
 import React from 'react';
 
-import { MDBBtn } from "mdbreact";
+// import { MDBBtn } from "mdbreact";
 
-import CGrid from '../../components/CGrid/CGrid'
+// import CGrid from '../../components/CGrid/CGrid'
 import Accordion from '../../components/Accordion/Accordion';
 import AccordionButton from '../../components/AccordionButton/AccordionButton'
 import CTable from '../../components/CTable/CTable'
@@ -45,7 +45,7 @@ const manifestString =
   },
 }
 `
-const Yarn: React.FunctionComponent = (props) => {
+const Yarn: React.FunctionComponent = () => {
   return(
     <React.Fragment>
       <SheetContainer>

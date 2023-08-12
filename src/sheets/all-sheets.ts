@@ -6,13 +6,14 @@ import Markdown from './Markdown/Markdown'
 import Css from './Css/Css'
 import ReactSheet from './ReactSheet/ReactSheet'
 import Regex from './Regex/Regex'
-import Sass from './Sass/Sass'
-import Testing from './Testing/Testing'
+// import Sass from './Sass/Sass'
+// import Testing from './Testing/Testing'
 import TSandJS from './TSandJS/TSandJS'
 import Yarn from './Yarn/Yarn'
 import Git from './Git/Git'
 import React from 'react'
 import Layout from './Layout/Layout'
+import Netlify from './Netlify/Netlify'
 
 export interface SheetDataItem {
   name: string;
@@ -78,5 +79,11 @@ export const allSheets: SheetData = [
     menu: "Layout",
     title: "Layout using html/css",
     reactSheet: Layout
+  },
+  {
+    name: "Netlify",
+    menu: "Netlify",
+    title: "Netlify",
+    reactSheet: Netlify
   },
 ]

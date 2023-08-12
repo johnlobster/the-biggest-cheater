@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { MDBBtn } from "mdbreact";
+// import { MDBBtn } from "mdbreact";
 
 import SheetContainer from '../../components/SheetContainer/SheetContainer'
 import CGrid from '../../components/CGrid/CGrid'
@@ -26,7 +26,7 @@ const animationDataTable: string[][] = [
   ["animation-play-state", "default 'running', set to 'paused' to pause"]
 ];
 
-const Css: React.FunctionComponent = (props) => {
+const Css: React.FunctionComponent = () => {
   return(
     <div>
       <SheetContainer>

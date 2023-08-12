@@ -16,7 +16,7 @@ import Page2 from './pages/Page2/Page2'
 import Page3 from './pages/Page3/Page3'
 
 
-import { allSheets, SheetDataItem } from './sheets/all-sheets'
+import { allSheets } from './sheets/all-sheets'
 
 import  './App.scss'
 

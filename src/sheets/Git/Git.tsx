@@ -1,9 +1,9 @@
 import React from 'react';
 
-import { MDBBtn } from "mdbreact";
+// import { MDBBtn } from "mdbreact";
 
 import CodeClick from '../../components/CodeClick/CodeClick'
-import CGrid from '../../components/CGrid/CGrid'
+// import CGrid from '../../components/CGrid/CGrid'
 import CTable from '../../components/CTable/CTable'
 import SheetContainer from '../../components/SheetContainer/SheetContainer'
 import Accordion from '../../components/Accordion/Accordion';
@@ -59,7 +59,7 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 `
-const Git: React.FunctionComponent = (props) => {
+const Git: React.FunctionComponent = () => {
   return(
     <React.Fragment>
       <SheetContainer>
