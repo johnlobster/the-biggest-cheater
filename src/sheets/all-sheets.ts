@@ -6,7 +6,7 @@ import Markdown from './Markdown/Markdown'
 import Css from './Css/Css'
 import ReactSheet from './ReactSheet/ReactSheet'
 import Regex from './Regex/Regex'
-// import Sass from './Sass/Sass'
+import Sass from './Sass/Sass'
 // import Testing from './Testing/Testing'
 import TSandJS from './TSandJS/TSandJS'
 import Yarn from './Yarn/Yarn'
@@ -14,6 +14,7 @@ import Git from './Git/Git'
 import React from 'react'
 import Layout from './Layout/Layout'
 import Netlify from './Netlify/Netlify'
+import MySql from './MySql/MySql'
 
 export interface SheetDataItem {
   name: string;
@@ -85,5 +86,17 @@ export const allSheets: SheetData = [
     menu: "Netlify",
     title: "Netlify",
     reactSheet: Netlify
+  },
+  {
+    name: "Sass",
+    menu: "Sass/SCSS",
+    title: "Sass/SCSS",
+    reactSheet: Sass
+  },
+  {
+    name: "SQL",
+    menu: "SQL",
+    title: "SQL (MySQL)",
+    reactSheet: MySql
   },
 ]

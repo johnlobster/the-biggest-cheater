@@ -25,6 +25,9 @@ UNDER DEVELOPMENT
 - http responses
 - netlify
 
+## Deployed using Netlify
+
+Go to [Cheatsheet](https://dulcet-florentine-42797d.netlify.app/)
 
 ## Node and npm versions
 

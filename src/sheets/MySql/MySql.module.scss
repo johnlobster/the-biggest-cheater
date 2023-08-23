@@ -1,0 +1,9 @@
+@import "../../global/_globals";
+
+.crudBox {
+  // Bigger bolder emphasis
+  & b {
+    font-weight: bolder;
+    font-size: 1.75em; 
+  }
+}
