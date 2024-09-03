@@ -16,7 +16,7 @@ import AccordionButton from '../../components/AccordionButton/AccordionButton'
 // }
 
 const gitLifeCycle: string[][]= [
-  ["create new repo from github or other", "git clone <url>"],
+  ["create new repo from github or other (can use github url e.g. https://github.com/johnlobster/my-repo.git", "git clone <url>"],
   ["list files that have changed, identify current branch","git status"],
   ["identify files before commit","git add <file>"],
   ["add all changed and new files", "git add -A"],
@@ -110,6 +110,16 @@ const Git: React.FunctionComponent = () => {
           </div>
 
         </Accordion>
+
+        <h4>github: link to local directory</h4>
+        <CTable tableDef={[4, [4, "code"]]} tableData={[
+          ["Initialize directory", "git init"],
+          ["Check in files as normal", ""],
+          ["link to remote", "git remote add origin 'https://github.com/johnlobster/python-examples.git'"],
+          ["push to remote repo", "git push --set-upstream origin master"]
+        ]} />
+        <p>URL is available on github - click code button (this is liable to change)</p>
+        <p>Only need to set-upstream one time</p>
       </SheetContainer>
       
     </React.Fragment>

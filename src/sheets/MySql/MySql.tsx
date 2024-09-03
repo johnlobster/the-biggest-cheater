@@ -109,6 +109,13 @@ const MySql: React.FunctionComponent = (props) => {
           <CodeBox codeString='WHERE <field> IN (SELECT <select statement>);' />
         </div>
 
+        <h4>JOIN</h4>
+        <p>A JOIN clause is used to combine rows from two or more tables, based on a related column between them</p>
+
+        <a href='https://www.w3schools.com/mysql/mysql_join.asp'>W3 Schools JOIN example</a>
+
+        <h4>UNION</h4>
+        <p></p>
         <h4>Database creation</h4>
         <div>
           
